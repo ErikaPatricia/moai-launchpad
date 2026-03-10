@@ -80,10 +80,15 @@ const Index = () => {
         </div>
 
         {/* Address */}
-        <p className="mt-8 flex items-center gap-2 text-sm text-foreground tracking-wide animate-fade-in-up delay-600">
+        <a
+          href="https://maps.app.goo.gl/oVVhSDzzq2o8awok9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 flex items-center gap-2 text-sm text-foreground tracking-wide animate-fade-in-up delay-600 hover:text-primary transition-colors"
+        >
           <MapPin className="h-4 w-4 shrink-0 text-primary" />
           Rua Mato Grosso, 1118 • Jd. Flórida • Campo Mourão • PR • CEP 87300-075
-        </p>
+        </a>
       </div>
     </main>
   );
