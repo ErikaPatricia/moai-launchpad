@@ -69,7 +69,7 @@ const Index = () => {
         {/* CTA */}
         <div className="mt-12 animate-fade-in-up delay-500">
           <a
-            href="https://wa.me/5544999999999"
+            href="https://wa.me/5544920024601"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button flex items-center gap-3 rounded-full px-10 py-4 font-display font-semibold text-base uppercase tracking-widest text-accent-foreground"
