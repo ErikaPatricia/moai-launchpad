@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,38 +6,46 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    --background: 230 25% 10%;
+    --foreground: 0 0% 96%;
 
-    --card: 0 0% 20%;
-    --card-foreground: 0 0% 100%;
+    --card: 230 20% 16%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 0%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 230 25% 10%;
+    --popover-foreground: 0 0% 96%;
 
-    --primary: 24 100% 50%;
+    --primary: 24 95% 53%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 20%;
+    --secondary: 250 60% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 230 15% 22%;
+    --muted-foreground: 230 10% 60%;
 
-    --accent: 155 100% 39%;
+    --accent: 155 80% 44%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 24 100% 50%;
+    --border: 230 15% 22%;
+    --input: 230 15% 22%;
+    --ring: 24 95% 53%;
 
-    --radius: 0.25rem;
+    --radius: 1rem;
 
-    --font-display: 'Roboto Condensed', sans-serif;
+    --font-display: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
+
+    --gradient-bg: linear-gradient(135deg, hsl(230 25% 8%) 0%, hsl(250 30% 14%) 50%, hsl(230 25% 10%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(230 20% 18% / 0.6) 0%, hsl(250 25% 14% / 0.4) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(155 80% 44%) 0%, hsl(160 70% 38%) 100%);
+    --gradient-glow-primary: radial-gradient(ellipse at 30% 0%, hsl(24 95% 53% / 0.12) 0%, transparent 60%);
+    --gradient-glow-secondary: radial-gradient(ellipse at 70% 100%, hsl(250 60% 55% / 0.1) 0%, transparent 60%);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.3), inset 0 1px 0 hsl(0 0% 100% / 0.05);
+    --shadow-cta: 0 8px 30px hsl(155 80% 44% / 0.3);
   }
 }
 
@@ -49,6 +57,8 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
+    background: var(--gradient-bg);
+    overflow: hidden;
   }
 
   h1, h2, h3 {
@@ -56,10 +66,58 @@
   }
 }
 
+@layer components {
+  .glass-card {
+    background: var(--gradient-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(0 0% 100% / 0.06);
+    box-shadow: var(--shadow-card);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card:hover {
+    border-color: hsl(0 0% 100% / 0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px hsl(0 0% 0% / 0.4), inset 0 1px 0 hsl(0 0% 100% / 0.08);
+  }
+
+  .cta-button {
+    background: var(--gradient-cta);
+    box-shadow: var(--shadow-cta);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px hsl(155 80% 44% / 0.45);
+  }
+
+  .ambient-glow {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .ambient-glow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-glow-primary);
+  }
+
+  .ambient-glow::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-glow-secondary);
+  }
+}
+
 @keyframes fade-in-up {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -72,25 +130,22 @@
   to { opacity: 1; }
 }
 
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
 .animate-fade-in {
-  animation: fade-in 1.2s ease-out forwards;
+  animation: fade-in 0.8s ease-out forwards;
 }
 
 .animate-fade-in-up {
-  animation: fade-in-up 0.8s ease-out forwards;
+  animation: fade-in-up 0.7s ease-out forwards;
 }
 
-.animate-delay-200 {
-  animation-delay: 0.2s;
-  opacity: 0;
-}
-
-.animate-delay-400 {
-  animation-delay: 0.4s;
-  opacity: 0;
-}
-
-.animate-delay-600 {
-  animation-delay: 0.6s;
-  opacity: 0;
-}
+.delay-100 { animation-delay: 100ms; opacity: 0; }
+.delay-200 { animation-delay: 200ms; opacity: 0; }
+.delay-300 { animation-delay: 300ms; opacity: 0; }
+.delay-400 { animation-delay: 400ms; opacity: 0; }
+.delay-500 { animation-delay: 500ms; opacity: 0; }
+.delay-600 { animation-delay: 600ms; opacity: 0; }
