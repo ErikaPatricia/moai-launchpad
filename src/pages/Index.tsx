@@ -1,4 +1,4 @@
-import logoMoai from "@/assets/logo-moai-2026.png";
+import logoMoai from "@/assets/logo-moai-branca.png";
 import logoEditora from "@/assets/logo-moai-editora.png";
 import logoWeGo from "@/assets/logo-we-go.png";
 import logoFullService from "@/assets/logo-full-service.png";
@@ -27,14 +27,14 @@ const businessUnits = [
 
 const Index = () => {
   return (
-    <main className="relative h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
+    <main className="relative h-screen flex flex-col items-center px-6 overflow-hidden">
       {/* Ambient glow */}
       <div className="ambient-glow" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center w-full max-w-6xl gap-10">
-        {/* Logo */}
-        <div className="animate-fade-in">
+      <div className="relative z-10 flex flex-col items-center w-full max-w-6xl h-full">
+        {/* Logo - centered between top and boxes */}
+        <div className="flex-1 flex items-center justify-center animate-fade-in">
           <img
             src={logoMoai}
             alt="Moai Comunicação"
@@ -47,13 +47,13 @@ const Index = () => {
           {businessUnits.map((unit) => (
             <div
               key={unit.title}
-              className={`glass-card rounded-2xl p-7 flex flex-col items-center text-center animate-fade-in-up ${unit.delay}`}
+              className={`glass-card rounded-2xl p-10 flex flex-col items-center text-center justify-center min-h-[220px] animate-fade-in-up ${unit.delay}`}
             >
-              <div className="mb-4 flex h-14 items-center justify-center">
+              <div className="mb-5 flex h-16 items-center justify-center">
                 <img
                   src={unit.logo}
                   alt={unit.title}
-                  className="h-12 w-auto object-contain"
+                  className="h-14 w-auto object-contain"
                 />
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground font-light">
@@ -64,7 +64,7 @@ const Index = () => {
         </div>
 
         {/* CTA + Address */}
-        <div className="flex flex-col items-center gap-5 animate-fade-in-up delay-500">
+        <div className="flex flex-col items-center gap-4 py-8 animate-fade-in-up delay-500">
           <a
             href="https://wa.me/5544999999999"
             target="_blank"
@@ -72,12 +72,12 @@ const Index = () => {
             className="cta-button flex items-center gap-3 rounded-full px-10 py-4 font-display font-semibold text-base uppercase tracking-widest text-accent-foreground"
           >
             <MessageCircle className="h-5 w-5" />
-            Fale com a Moai
+            Quero melhorar a comunicação da minha empresa
           </a>
 
-          <p className="flex items-center gap-2 text-sm text-muted-foreground tracking-wide animate-fade-in-up delay-600">
+          <p className="flex items-center gap-2 text-sm text-foreground tracking-wide animate-fade-in-up delay-600">
             <MapPin className="h-4 w-4 shrink-0 text-primary" />
-            Rua Mato Grosso, 1118 — Jd. Flórida, Campo Mourão – PR
+            Rua Mato Grosso, 1118 • Jd. Flórida • Campo Mourão • PR • CEP 87300-075
           </p>
         </div>
       </div>
