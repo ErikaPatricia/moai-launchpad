@@ -35,15 +35,15 @@ const Index = () => {
 
       <div className="relative z-10 flex flex-col items-center w-full max-w-6xl">
         {/* Spacer top */}
-        <div style={{ height: 150 }} />
+        <div style={{ height: 120 }} />
 
         {/* Logo */}
         <div className="animate-fade-in">
-          <img src={logoMoai} alt="Moai Comunicação" className="w-48 md:w-56" />
+          <img src={logoMoai} alt="Moai Comunicação" className="w-56 md:w-72" />
         </div>
 
         {/* Spacer between logo and boxes */}
-        <div style={{ height: 150 }} />
+        <div style={{ height: 120 }} />
 
         {/* Business Units */}
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-5">
