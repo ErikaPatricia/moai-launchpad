@@ -8,7 +8,8 @@ const businessUnits = [
   {
     logo: logoEditora,
     title: "Moai Editora",
-    description: "Livros, revistas e catálogos com qualidade editorial que transforma ideias em publicações memoráveis.",
+    description:
+      "Livros, revistas e catálogos com qualidade editorial que transforma ideias em publicações memoráveis.",
     delay: "delay-200",
     logoHeight: "h-20",
   },
@@ -53,15 +54,9 @@ const Index = () => {
               className={`glass-card rounded-2xl p-12 flex flex-col items-center text-center justify-center min-h-[260px] animate-fade-in-up ${unit.delay}`}
             >
               <div className="mb-6 flex items-center justify-center">
-                <img
-                  src={unit.logo}
-                  alt={unit.title}
-                  className={`${unit.logoHeight} w-auto object-contain`}
-                />
+                <img src={unit.logo} alt={unit.title} className={`${unit.logoHeight} w-auto object-contain`} />
               </div>
-              <p className="text-sm leading-relaxed text-muted-foreground font-light">
-                {unit.description}
-              </p>
+              <p className="text-sm leading-relaxed text-muted-foreground font-light">{unit.description}</p>
             </div>
           ))}
         </div>
@@ -81,7 +76,7 @@ const Index = () => {
 
         {/* Address */}
         <a
-          href="https://maps.app.goo.gl/oVVhSDzzq2o8awok9"
+          href="https://maps.app.goo.gl/GuuiAE9DCicCsmaa7"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-8 flex items-center gap-2 text-sm text-foreground tracking-wide animate-fade-in-up delay-600 hover:text-primary transition-colors"
