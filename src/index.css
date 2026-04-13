@@ -58,7 +58,7 @@
     @apply bg-background text-foreground;
     font-family: var(--font-body);
     background: var(--gradient-bg);
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   h1, h2, h3 {
