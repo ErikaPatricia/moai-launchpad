@@ -40,7 +40,7 @@ const Cursos = () => {
             </div>
             <div className="flex items-center gap-3 text-foreground">
               <MapPin className="h-5 w-5 text-primary shrink-0" />
-              <span className="text-sm">Campo Mourão - PR</span>
+              <span className="text-sm">Online — link enviado no grupo de participantes</span>
             </div>
           </div>
 
