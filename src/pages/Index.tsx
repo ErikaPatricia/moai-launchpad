@@ -43,8 +43,21 @@ const Index = () => {
           <img src={logoMoai} alt="Moai Comunicação" className="w-48 md:w-72" />
         </div>
 
+        {/* Course CTA */}
+        <div className="mt-6 md:mt-10 animate-fade-in-up delay-200">
+          <a
+            href="https://forms.gle/hTDo3KixM3t2ZbsP9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full px-8 py-3 font-display font-semibold text-sm md:text-base text-white tracking-wide shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            style={{ background: 'linear-gradient(135deg, hsl(40, 95%, 55%), hsl(24, 95%, 53%))' }}
+          >
+            Participe do nosso curso de Marketing
+          </a>
+        </div>
+
         {/* Spacer between logo and boxes */}
-        <div className="h-10 md:h-[120px]" />
+        <div className="h-8 md:h-16" />
 
         {/* Business Units */}
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-5">
