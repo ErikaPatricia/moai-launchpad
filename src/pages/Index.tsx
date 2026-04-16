@@ -44,15 +44,15 @@ const Index = () => {
         </div>
 
         {/* Course CTA */}
-        <div className="mt-6 md:mt-10 animate-fade-in-up delay-200">
+        <div className="mt-10 md:mt-16 animate-fade-in-up delay-200">
           <a
             href="https://forms.gle/hTDo3KixM3t2ZbsP9"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full px-8 py-3 font-display font-semibold text-sm md:text-base text-white tracking-wide shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            className="inline-block rounded-full px-8 py-3 font-display font-semibold text-sm md:text-base text-black tracking-wide shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
             style={{ background: 'linear-gradient(135deg, hsl(40, 95%, 55%), hsl(24, 95%, 53%))' }}
           >
-            Participe do nosso curso de Marketing
+            Participe do nosso curso de Marketing que será dos dias 27 a 30 de Abril
           </a>
         </div>
 
