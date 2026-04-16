@@ -46,12 +46,10 @@ const Index = () => {
         {/* Course CTA */}
         <div className="mt-10 md:mt-16 animate-fade-in-up delay-200">
           <a
-            href="https://forms.gle/hTDo3KixM3t2ZbsP9"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/cursos"
             className="glass-card inline-block rounded-2xl px-8 py-4 font-display font-semibold text-sm md:text-base text-foreground tracking-wide transition-all duration-300 hover:scale-105 text-center"
           >
-            Participe do nosso curso de Marketing que será dos dias 27 a 30 de Abril
+            Clique aqui e se inscreva no nosso curso de Marketing que será dos dias 27 a 30 de Abril
           </a>
         </div>
 
