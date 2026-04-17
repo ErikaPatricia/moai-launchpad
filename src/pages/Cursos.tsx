@@ -20,12 +20,12 @@ const Cursos = () => {
         {/* Course Card */}
         <div className="glass-card rounded-2xl p-8 md:p-12 w-full animate-fade-in-up delay-200">
           <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Curso de Marketing
+            Formação em Estrategista Digital & Social Midia
           </h1>
 
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Aprenda estratégias práticas de marketing para impulsionar sua empresa. 
-            Um curso intensivo com conteúdo aplicável ao seu negócio, ministrado por profissionais 
+            Aprenda estratégias práticas de marketing digital e social media para impulsionar sua empresa.
+            Uma formação intensiva com conteúdo aplicável ao seu negócio, ministrada por profissionais
             com experiência real de mercado.
           </p>
 
