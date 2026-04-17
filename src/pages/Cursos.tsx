@@ -1,5 +1,5 @@
 import logoMoai from "@/assets/logo-moai-branca.png";
-import { ArrowLeft, Calendar, Clock, MapPin, MessageCircle } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, MapPin, MessageCircle, Gift } from "lucide-react";
 
 const Cursos = () => {
   return (
@@ -37,6 +37,10 @@ const Cursos = () => {
             <div className="flex items-center gap-3 text-foreground">
               <Clock className="h-5 w-5 text-primary shrink-0" />
               <span className="text-sm">4 dias de formação intensiva</span>
+            </div>
+            <div className="flex items-center gap-3 text-foreground">
+              <Gift className="h-5 w-5 text-primary shrink-0" />
+              <span className="text-sm">Gratuito</span>
             </div>
             <div className="flex items-center gap-3 text-foreground">
               <MapPin className="h-5 w-5 text-primary shrink-0" />
