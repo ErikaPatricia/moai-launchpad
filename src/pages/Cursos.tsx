@@ -36,7 +36,7 @@ const Cursos = () => {
             </div>
             <div className="flex items-center gap-3 text-foreground">
               <Clock className="h-5 w-5 text-primary shrink-0" />
-              <span className="text-sm">4 dias de curso intensivo</span>
+              <span className="text-sm">4 dias de formação intensiva</span>
             </div>
             <div className="flex items-center gap-3 text-foreground">
               <MapPin className="h-5 w-5 text-primary shrink-0" />
