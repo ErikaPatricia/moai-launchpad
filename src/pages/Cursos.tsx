@@ -24,19 +24,19 @@ const Cursos = () => {
           </h1>
 
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Aprenda estratégias práticas de marketing digital e social media para impulsionar sua empresa.
-            Uma formação intensiva com conteúdo aplicável ao seu negócio, ministrada por profissionais
-            com experiência real de mercado.
+            Diante da crescente falta por profissionais capacitados no mercado digital, a Moai Comunicação e Editora promoverá uma formação gratuita voltada a jovens a partir de 16 anos e pessoas que desejam se reposicionar profissionalmente em busca de novas oportunidades.
+            <br /><br />
+            O treinamento será online e com apenas 20 vagas. Ao longo dos 5 encontros, os alunos terão acesso a aulas ao vivo, atividades práticas e certificado.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div className="flex items-center gap-3 text-foreground">
               <Calendar className="h-5 w-5 text-primary shrink-0" />
-              <span className="text-sm">27 a 30 de Abril</span>
+              <span className="text-sm">1º Encontro dia 27 de Abril às 19h</span>
             </div>
             <div className="flex items-center gap-3 text-foreground">
               <Clock className="h-5 w-5 text-primary shrink-0" />
-              <span className="text-sm">4 dias de formação intensiva</span>
+              <span className="text-sm">Desfrute dessa formação intensiva</span>
             </div>
             <div className="flex items-center gap-3 text-foreground">
               <Gift className="h-5 w-5 text-primary shrink-0" />
