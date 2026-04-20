@@ -49,7 +49,8 @@ const Index = () => {
             href="/cursos"
             className="glass-card inline-block rounded-2xl px-8 py-4 font-display font-semibold text-sm md:text-base text-foreground tracking-wide transition-all duration-300 hover:scale-105 text-center"
           >
-            Clique aqui e se inscreva na nossa Formação em Estrategista Digital & Social Midia, que será dos dias 27 a 30 de Abril
+            Clique aqui e se inscreva na nossa Formação em Estrategista Digital & Social Midia, 1º Encontro dia 27 de
+            Abril às 19h
           </a>
         </div>
 
